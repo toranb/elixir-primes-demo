@@ -7,7 +7,7 @@ use Mix.Config
 # watchers to your application. For example, we use it
 # with webpack to recompile .js and .css sources.
 config :demo, DemoWeb.Endpoint,
-  http: [port: 4009],
+  http: [port: 80],
   debug_errors: true,
   code_reloader: true,
   check_origin: false,
