@@ -1,18 +1,5 @@
-```
-docker build -t elixir .
-```
+Example elixir app to show off the scheduler on Heroku
 
 ```
-docker run -it -p 80:8000 elixir
-```
-
-```
-heroku login
-heroku container:login
-heroku container:push web --app elixirprimes
-heroku container:release web --app elixirprimes
-```
-
-```
-heroku logs --app elixirprimes --tail
+git push heroku master
 ```
