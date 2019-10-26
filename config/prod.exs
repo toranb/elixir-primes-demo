@@ -11,7 +11,6 @@ use Mix.Config
 # before starting your production server.
 config :demo, DemoWeb.Endpoint,
   server: true,
-  load_from_system_env: true,
   http: [:inet6, port: String.to_integer(System.get_env("PORT") || "4000")],
   url: [scheme: "https", host: "elixirprimes.herokuapp.com", port: 443],
   force_ssl: [rewrite_on: [:x_forwarded_proto]]
